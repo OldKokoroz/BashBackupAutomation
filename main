@@ -16,8 +16,8 @@ current_date=$(date +%Y-%m-%d)
 what_to_backup=""
 
 server_username=""
-server_ip=""
 server_passwd=""
+server_ip=""
 
 $(rsync) -a -v --remove-source-files $what_to_backup $server_username@$server_ip:/home/$server_username/backup/$current_date
 
